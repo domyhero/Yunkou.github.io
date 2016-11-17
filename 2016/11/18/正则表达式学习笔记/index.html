@@ -1,11 +1,12 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 正则表达式学习笔记 · Hexo</title><meta name="description" content="正则表达式对于我来说一直想黑暗魔法一样的存在。手机正则去网上搜，邮箱正则去网上搜，复杂点的看看文档拼凑一下，再复杂只能厚着脸皮让其他同事给写一个。从来没有系统的学习过，今天准备拿下它。
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 正则表达式学习笔记 · Hexo</title><meta name="description" content="
+正则表达式对于我来说一直像黑暗魔法一样的存在。手机正则去网上搜，邮箱正则去网上搜，复杂点的看看文档拼凑一下，再复杂只能厚着脸皮让其他同事给写一个。从来没有系统的学习过，今天准备拿下它。
 1. 学习目标：
 了解正则表达式语法
 在IDE中使用正则表达式
 在javascript 中使用正则表达式处理字符串
 
-2. 什么是正则表达式
-正则表达式，又称正规表示式、正规表示法、正规表达式、规则表达式"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">博客</a></li><li class="nav-list-item"><a href="http://weibo.com/koopkng" target="_blank" class="nav-list-link">微博</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li><li class="nav-list-item"><a href="https://github.com/Yunkou" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">正则表达式学习笔记</h1><div class="post-meta"><div class="post-time">Nov 18, 2016</div></div><div class="post-content"><p>正则表达式对于我来说一直想黑暗魔法一样的存在。手机正则去网上搜，邮箱正则去网上搜，复杂点的看看文档拼凑一下，再复杂只能厚着脸皮让其他同事给写一个。从来没有系统的学习过，今天准备拿下它。</p>
+2. 什么是正则表达式&lt;/h"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">博客</a></li><li class="nav-list-item"><a href="http://weibo.com/koopkng" target="_blank" class="nav-list-link">微博</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li><li class="nav-list-item"><a href="https://github.com/Yunkou" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">正则表达式学习笔记</h1><div class="post-meta"><div class="post-time">Nov 18, 2016</div></div><div class="post-content"><p><img src="http://ww3.sinaimg.cn/large/006y8mN6jw1f9voxp4qb9j312w0kkthh.jpg" alt=""></p>
+<p>正则表达式对于我来说一直像黑暗魔法一样的存在。手机正则去网上搜，邮箱正则去网上搜，复杂点的看看文档拼凑一下，再复杂只能厚着脸皮让其他同事给写一个。从来没有系统的学习过，今天准备拿下它。</p>
 <h3 id="1-__u5B66_u4E60_u76EE_u6807_uFF1A"><a href="#1-__u5B66_u4E60_u76EE_u6807_uFF1A" class="headerlink" title="1. 学习目标："></a>1. 学习目标：</h3><ol>
 <li>了解正则表达式语法</li>
 <li>在IDE中使用正则表达式</li>
@@ -32,7 +33,7 @@
 <p>说下这个正则的意义，如果网站用了https，网站引用静态资源也必须是https，否则报错。如果写成 <code>//</code> 会自动识别 http 或者 https</p>
 <h5 id="u65E5_u671F_u5339_u914D_u4E0E_u5206_u7EC4_u66FF_u6362"><a href="#u65E5_u671F_u5339_u914D_u4E0E_u5206_u7EC4_u66FF_u6362" class="headerlink" title="日期匹配与分组替换"></a>日期匹配与分组替换</h5><p><code>/^\d{4}[/-]\d{2}[/-]\d{2}$/</code></p>
 <p><img src="http://ww3.sinaimg.cn/large/006tNc79gw1f9fnup4jbjj30dg02haa8.jpg" alt=""></p>
-<p>这个正则比较复杂，画符念咒的地方太多了，一一分析一下：</p>
+<p>这个正则比较复杂，画符念咒的地方太多了，一一分析：</p>
 <ol>
 <li>Start of line 是由<code>^</code>生效的表示以此开头</li>
 <li>对应结尾End of line 由<code>$</code>生效表示以此结尾</li>
@@ -68,7 +69,7 @@
 <h6 id="u6709i_u548C_u6CA1_u6709i_u7684_u533A_u522B"><a href="#u6709i_u548C_u6CA1_u6709i_u7684_u533A_u522B" class="headerlink" title="有i和没有i的区别"></a>有i和没有i的区别</h6><p><img src="http://ww1.sinaimg.cn/large/006tNc79gw1f9fpapzyxfj30a505j74p.jpg" alt=""></p>
 <p>有i忽略大小写，没有i严格区分大小写</p>
 <p><img src="http://ww4.sinaimg.cn/large/006tNc79gw1f9fpbyofj7j307l01nt8q.jpg" alt=""></p>
-<h6 id="u6709m_u548C_u6CA1_u6709m_u7684_u533A_u522B"><a href="#u6709m_u548C_u6CA1_u6709m_u7684_u533A_u522B" class="headerlink" title="有m和没有m的区别"></a>有m和没有m的区别</h6><h5 id="2__u5143_u5B57_u7B26"><a href="#2__u5143_u5B57_u7B26" class="headerlink" title="2 元字符"></a>2 元字符</h5><p>正则表达式由两种基本字符组成：</p>
+<h5 id="2__u5143_u5B57_u7B26"><a href="#2__u5143_u5B57_u7B26" class="headerlink" title="2 元字符"></a>2 元字符</h5><p>正则表达式由两种基本字符组成：</p>
 <ul>
 <li>原义字符</li>
 <li>非打印字符</li>
