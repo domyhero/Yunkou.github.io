@@ -1,52 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Hexo]]></title>
+  <title>Hexo</title>
   
   <link href="/atom.xml" rel="self"/>
+  
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-17T18:59:18.000Z</updated>
+  <updated>2016-11-25T18:32:24.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name><![CDATA[Yunkou]]></name>
+    <name>Yunkou</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[正则表达式学习笔记]]></title>
+    <title>工程师如何规划自己的职业生涯</title>
+    <link href="http://yoursite.com/2016/11/26/%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%A6%82%E4%BD%95%E8%A7%84%E5%88%92%E8%87%AA%E5%B7%B1%E7%9A%84%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
+    <id>http://yoursite.com/2016/11/26/工程师如何规划自己的职业生涯/</id>
+    <published>2016-11-25T18:28:57.000Z</published>
+    <updated>2016-11-25T18:32:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ww1.sinaimg.cn/large/006y8lVagw1fa4wvmagq5j30q40hfgq3.jpg" alt=""></p>
+<blockquote>
+<p>全文为<a href="https://www.zhihu.com/lives/772768188231340032" target="_blank" rel="external">工程师如何规划自己的职业生涯</a> 学习笔记，结合了部分自己的想法。推荐付费听课。</p>
+</blockquote>
+<h3 id="1-工程师职级体系"><a href="#1-工程师职级体系" class="headerlink" title="1 工程师职级体系"></a>1 工程师职级体系</h3><p>参考谷歌工程师职级体系</p>
+<ul>
+<li>Software Engineer II    硕士毕业</li>
+<li>Software Engineer III   博士毕业</li>
+<li>Senior Software Engineer</li>
+<li>Staff Engineer  分水岭</li>
+<li>Senior Staff Engineer</li>
+<li>Principal Engineer   架构师</li>
+<li>Distinguished Engineer  杰出贡献</li>
+<li>Google Fellow  终身荣誉 VP</li>
+<li>Google Senior Fellow    </li>
+</ul>
+<p><strong>Software Engineer I II III</strong></p>
+<p>google招聘很少招本科生， 硕士毕业 一般为Software Engineer II ， 对应博士毕业为Software Engineer III</p>
+<p><strong>Staff Engineer</strong></p>
+<p>绝大部分google 的工程师停留在这个层级。层级要求，有自己的想法，找到一个有价值的方向，提出自己的建议，把这个建议实现为一个工程项目，并把它实现出来，得到广泛的使用。要有一个很好的结果：提升了团队的开发体验或者用户的使用体验，增加公司的收入。不仅仅要技术过硬，还要有好的想法，并对项目负责。比如给自己的项目指定时间表，制定目标和OKR，负责这个项目的完成。</p>
+<p><strong>Senior Staff Engineer</strong></p>
+<p>必须要有更高的专业技能，必须吧更有难度的系统完成。从Staff级别开始要有很强的判断力，不能总是要别人告诉你完成什么任务，从领导和上级领任务，要自己发现问题并解决掉。</p>
+<p><strong>Staff Engineer</strong> </p>
+<p>晋升难度比较大，也是工程师比较光荣的事情。一旦晋升到此级别，工程师的名字就会被贴到公司的网页上去。</p>
+<p><strong>Principal Engineer</strong></p>
+<p>要在业内有领先的水平，和代表性的结果。此级别在google是非常少的，少于1%。</p>
+<p><strong>Distinguished Engineer</strong></p>
+<p>杰出工程师：需要对公司作出特别大的贡献，比如极大的提高了用户体验，或者广告系统的变现能力</p>
+<p><strong>Google Fellow</strong> </p>
+<p>终身荣誉：必须在公司和业界做成长远深刻的成绩</p>
+<p><strong>Google Senior Fellow</strong></p>
+<p>高级副总裁：为互联网战神Jeff Dean 设立的岗位 <a href="http://www.slate.com/articles/technology/doers/2013/01/jeff_dean_facts_how_a_google_programmer_became_the_chuck_norris_of_the_internet.single.html" target="_blank" rel="external">How Google’s Jeff Dean became the Chuck Norris of the Internet.</a></p>
+<blockquote>
+<p>豆瓣网友总结：<a href="https://www.douban.com/note/424873819/" target="_blank" rel="external">外企的职级等级制度</a></p>
+</blockquote>
+<p>刚入门的工程师：需要了解基本的数据结构，算法，操作系统，数据库，面向对象编程等常用的理论知识。之后拓展深度和广度。</p>
+<p>初级的工程师：工作1-2年的工程师，能够独立完成开发任务，通过熟练使用开发工具，编程语言，理解基本的业务逻辑。能够抽象的建模，并且熟悉测试，代码发布，性能分析，修改bug，版本管理等工作。</p>
+<p>技术骨干：带领项目的能力，参与制定代码规范、开发的流程，非常熟悉常用的技术框架，和算法的原理，需要有更强的解决问题的能力，需要了解在不同的场景下如何技术选型。</p>
+<p>技术专家：必须对一个或者多个技术领域有更深的理解。能过独立设计和实现解决复杂的技术问题。比如设计一个新的工具，新的算法，新的系统框架。</p>
+<h3 id="2-判断是否可以晋升的评判标准"><a href="#2-判断是否可以晋升的评判标准" class="headerlink" title="2 判断是否可以晋升的评判标准"></a>2 判断是否可以晋升的评判标准</h3><p>需要考察的四个维度</p>
+<ol>
+<li>专业知识和经验的沉淀和积累</li>
+<li>项目的规模和难度</li>
+<li>执行力和项目的结果</li>
+<li>领导力（其他同事的认同和信服，面对问题的有正确可靠的解决方案和协调内外资源的能力）</li>
+</ol>
+<h3 id="3-为晋升做的准备"><a href="#3-为晋升做的准备" class="headerlink" title="3 为晋升做的准备"></a>3 为晋升做的准备</h3><p>从四个维度出发考量自己是否具有下个职级所具备的能力。通过事实来证明自己的能力。</p>
+<p>以项目的规模和难度为例，如果发现证明不了自己做的项目有规模和难度的，不要被动的等待，要主动的和上级沟通，争取一些。能证明自己可以胜任更大规模和更高难度的项目</p>
+<p>专业知识和经验 从一开始对项目的熟悉，到熟练操作。到能知道别人，协调资源负责项目树立自己在技术团队的威信力，再到自己在业界有一定的影响力。</p>
+<h3 id="4-程序员变成管理者会面临哪些改变"><a href="#4-程序员变成管理者会面临哪些改变" class="headerlink" title="4 程序员变成管理者会面临哪些改变"></a>4 程序员变成管理者会面临哪些改变</h3><p>从Developer转到Manager给人产生一种”晋升”的错觉。这导致太多人，其实并不是因为想做管理，只是因为作为senior工程师，似乎没有其他上升通道。喜欢做管理的人做了管理者可以不断学习和提高管理技巧。而不喜欢又不懂管理的管理者，会成为公司员工离职的主要原因。 很多工程师关注技术问题的解决，然而有时候是团队之间的沟通交流和协作出了问题。如何规范workflow，如何与团队协作达到1+1&gt;2，真正区分了一个人的side project和工程中使用的大项目。不论是敏捷开发，TDD，scrum，等等，都是为此而生。 把管理当做和技术岗位一样严肃的”技能”。People skill是一种比较soft的技能，但是并不代表毫无经验的任何人都可以凭天分混下去。学习并且练习如何做管理，和每个合作的人建立信任； 好的技术leader需要过硬的技术背景和强大的同理心，能够理解和感知他人，并且给予指导和帮助他人成长。</p>
+<p>重要的一点：还要做好向上管理，培养上级对自己信任，让团队做更有难度，更有挑战的项目来证明，要在上级那为团队打造品牌。</p>
+<h3 id="5-选择大公司还是创业公司"><a href="#5-选择大公司还是创业公司" class="headerlink" title="5 选择大公司还是创业公司"></a>5 选择大公司还是创业公司</h3><p>大公司和创业公司工程师文化的异同？如何结合自己的特质，来做一个适合自己的选择。</p>
+<p>在创业公司工作呢，需要一种挽起袖子什么都要干的精神。就像你要个造个房子，到创业公司你会发现铲子什么工具都没有，那怎么办呢？自怨自哀是没有用的。你自己动手去创造。在创业公司，有一种成就感，来自造物和随产品一起成长的幸福感。</p>
+<p>在大公司就不会有工具不齐全的问题。大公司的系统相对比较成熟和完善。对工程师来讲工作的，一个优点就是能够了解到成熟的系统工具是什么样的啊，而且他能够很快的进入一个高效率的开发状态，弊端呢就是在一个成熟的环境下面把一个现有的系统推倒再重来的机会就非常非常少了。在大公司工作，很可能你只是庞大系统的一个很细小的分支，Tiger举例的google 的搜索系统中，一个非常小的分支的推荐系统。每个人能够负责的范围也有很大的局限性。</p>
+<p>创业公司是把产品从零做到六七十分的工作，大公司是从90分做到95分这样的。个人参与就是1分甚至零点几分的。</p>
+<h3 id="6-程序员是不是青春饭"><a href="#6-程序员是不是青春饭" class="headerlink" title="6 程序员是不是青春饭"></a>6 程序员是不是青春饭</h3><p>这是一个大家都很关心的问题，答案可能让大家失望了。既然我们从事了互联网，这个行业，那就必须要接受这个残酷的现实：就是必须，不停地学习给自己充电积累，才能够在这样的一个环境下把幸存下来，不被淘汰，因为这个行业实在太快了。可能现在遇到很难的问题，在未来的几年，就是很基础的常识。回想大学在学校里学习和研究的内容，现在都不实用了。Tiger 在博士期间研究的是低带宽下面的网络性能优化，但是现在手机弱网络，都要比那个时代的更好了。</p>
+<p>现在工程上解决不了的问题，在过几年，新的技术出现了或者硬件解决了现在的难题，发现现有积累的经验已经不再是优势了。</p>
+<p>再看前端，在04-08年左右你可能在这个阶段积累了很多浏览器兼容性的问题。转眼到14-16年发现浏览器兼容好像没那么重要了。再比如我们曾经风靡一时的网页三剑客。现在入行的人可能都没听说过了。</p>
+<p>另有一种说法，程序员转做管理，这个想法在传统的软件公司，还是可以的。但是在互联网公司，纯粹的管理者完全不懂技术是没有生存空间的。作为一个合格的技术管理者，需要了解哪些是适合团队的技术选型。你要能给你的团队提出有深度的技术解决方案。</p>
+<p>所以我们做工程师就要接受这样一个现实，因为技术的发展日新月异，所以我们必须要活到老，要有很强的学习的欲望和好奇心。这不是年龄的问题，这是态度的问题。只要你愿意学习，这口青春饭也可以一直吃到老。</p>
+<h3 id="7-国内互联网公司的优势与如如何选择"><a href="#7-国内互联网公司的优势与如如何选择" class="headerlink" title="7 国内互联网公司的优势与如如何选择"></a>7 国内互联网公司的优势与如如何选择</h3><p>对比硅谷，国内的互联网气氛还是比较浮躁的。但是依然止不住，国内互联网发展的趋势，无论从双十一还是从去年如火如荼的o2o 大战，国内的互联网依附人口红利，还是不断的上升增长的趋势。在社交，电商，移动支付，智能硬件，大数据这些领域里面，中国互联网公司优势会越来越强，在这些领域中国互联网公司会引领潮流的。</p>
+<p>而判断一个公司的前景需要从一下几点考量：模式、方向、壁垒、团队。作为工程师来讲是否是一家技术驱动产品的公司。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006y8lVagw1fa4wvmagq5j30q40hfgq3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;全文为&lt;a href=&quot;https://www.zhihu.com
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>正则表达式学习笔记</title>
     <link href="http://yoursite.com/2016/11/18/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2016/11/18/正则表达式学习笔记/</id>
     <published>2016-11-17T18:45:04.000Z</published>
     <updated>2016-11-17T18:59:18.000Z</updated>
+    
     <content type="html"><![CDATA[<p><img src="http://ww3.sinaimg.cn/large/006y8mN6jw1f9voxp4qb9j312w0kkthh.jpg" alt=""></p>
 <p>正则表达式对于我来说一直像黑暗魔法一样的存在。手机正则去网上搜，邮箱正则去网上搜，复杂点的看看文档拼凑一下，再复杂只能厚着脸皮让其他同事给写一个。从来没有系统的学习过，今天准备拿下它。</p>
-<h3 id="1-__u5B66_u4E60_u76EE_u6807_uFF1A"><a href="#1-__u5B66_u4E60_u76EE_u6807_uFF1A" class="headerlink" title="1. 学习目标："></a>1. 学习目标：</h3><ol>
+<h3 id="1-学习目标："><a href="#1-学习目标：" class="headerlink" title="1. 学习目标："></a>1. 学习目标：</h3><ol>
 <li>了解正则表达式语法</li>
 <li>在IDE中使用正则表达式</li>
 <li>在javascript 中使用正则表达式处理字符串</li>
 </ol>
-<h3 id="2-__u4EC0_u4E48_u662F_u6B63_u5219_u8868_u8FBE_u5F0F"><a href="#2-__u4EC0_u4E48_u662F_u6B63_u5219_u8868_u8FBE_u5F0F" class="headerlink" title="2. 什么是正则表达式"></a>2. 什么是正则表达式</h3><blockquote>
+<h3 id="2-什么是正则表达式"><a href="#2-什么是正则表达式" class="headerlink" title="2. 什么是正则表达式"></a>2. 什么是正则表达式</h3><blockquote>
 <p><strong>正则表达式</strong>，又称<strong>正规表示式</strong>、<strong>正规表示法、正规表达式、规则表达式、常规表示法</strong>（英语：Regular Expression，在代码中常简写为regex、regexp或RE），计算机科学的一个概念。正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。在很多文本编辑器里，正则表达式通常被用来检索、替换那些匹配某个模式的文本。</p>
 </blockquote>
 <p>通俗的讲就是按照某种<strong>规则</strong>去匹配符合条件的字符串</p>
-<h3 id="3-_u5229_u7528_u56FE_u5F62_u5316_u5DE5_u5177_u7406_u89E3_u6B63_u5219_u8868_u8FBE_u5F0F"><a href="#3-_u5229_u7528_u56FE_u5F62_u5316_u5DE5_u5177_u7406_u89E3_u6B63_u5219_u8868_u8FBE_u5F0F" class="headerlink" title="3.利用图形化工具理解正则表达式"></a>3.利用图形化工具理解正则表达式</h3><p>辅助理解正则表达的在线工具 <a href="https://regexper.com/" target="_blank" rel="external">https://regexper.com/</a>  我们利用这个工具辅助理解，正则表达式。语法没懂表着急，后面会有，这里只是学会用工具帮助我们学习。</p>
-<h5 id="u624B_u673A_u53F7_u6B63_u5219"><a href="#u624B_u673A_u53F7_u6B63_u5219" class="headerlink" title="手机号正则"></a>手机号正则</h5><p><code>/^1[34578][0-9]{9}$/</code></p>
+<h3 id="3-利用图形化工具理解正则表达式"><a href="#3-利用图形化工具理解正则表达式" class="headerlink" title="3.利用图形化工具理解正则表达式"></a>3.利用图形化工具理解正则表达式</h3><p>辅助理解正则表达的在线工具 <a href="https://regexper.com/" target="_blank" rel="external">https://regexper.com/</a>  我们利用这个工具辅助理解，正则表达式。语法没懂表着急，后面会有，这里只是学会用工具帮助我们学习。</p>
+<h5 id="手机号正则"><a href="#手机号正则" class="headerlink" title="手机号正则"></a>手机号正则</h5><p><code>/^1[34578][0-9]{9}$/</code></p>
 <p><img src="http://ww1.sinaimg.cn/large/006tNc79gw1f9feibz42aj30ag04omxa.jpg" alt="手机号正则表达式"></p>
 <p><strong>注释：</strong>以1开头，第二位为3 4 5 7 9 其中一个，以9位（本身1次加重复8次）0-9数字结尾</p>
-<h5 id="u5355_u8BCD_u8FB9_u754C"><a href="#u5355_u8BCD_u8FB9_u754C" class="headerlink" title="单词边界"></a>单词边界</h5><p><code>/\bis\b/</code></p>
+<h5 id="单词边界"><a href="#单词边界" class="headerlink" title="单词边界"></a>单词边界</h5><p><code>/\bis\b/</code></p>
 <p><img src="http://ww3.sinaimg.cn/large/006tNc79gw1f9fn3312uwj307g014q2v.jpg" alt=""></p>
 <p><strong>注释：</strong> is前后都是单词的边界，比较晦涩难懂？感受下两者的区别，<code>\b</code> 会方道语法部分讲解</p>
 <p><img src="http://ww2.sinaimg.cn/large/006tNc79gw1f9fn7b5qdnj308x04maab.jpg" alt=""></p>
 <p><img src="http://ww2.sinaimg.cn/large/006tNc79gw1f9fn8rqa5gj308702hgln.jpg" alt=""></p>
-<h5 id="URL_u5206_u7EC4_u66FF_u6362"><a href="#URL_u5206_u7EC4_u66FF_u6362" class="headerlink" title="URL分组替换"></a>URL分组替换</h5><p><code>/http:(\/\/.+\.jpg)/</code></p>
+<h5 id="URL分组替换"><a href="#URL分组替换" class="headerlink" title="URL分组替换"></a>URL分组替换</h5><p><code>/http:(\/\/.+\.jpg)/</code></p>
 <p>看不懂的不要慌语法部分后面会有介绍，这里只是展示利用可视化的图形帮助我们理解正则表达式，可以回来再看木有关系</p>
 <p><img src="http://ww4.sinaimg.cn/large/006tNc79gw1f9fngh1zj0j30890253yj.jpg" alt=""></p>
 <p>正则表达式中括号用来分组，这个时候我们可以通过用<code>$1</code>来获取 group#1的内容</p>
 <p><img src="http://ww4.sinaimg.cn/large/006tNc79gw1f9fnjun2tlj30bq02kmxd.jpg" alt=""></p>
 <p>说下这个正则的意义，如果网站用了https，网站引用静态资源也必须是https，否则报错。如果写成 <code>//</code> 会自动识别 http 或者 https</p>
-<h5 id="u65E5_u671F_u5339_u914D_u4E0E_u5206_u7EC4_u66FF_u6362"><a href="#u65E5_u671F_u5339_u914D_u4E0E_u5206_u7EC4_u66FF_u6362" class="headerlink" title="日期匹配与分组替换"></a>日期匹配与分组替换</h5><p><code>/^\d{4}[/-]\d{2}[/-]\d{2}$/</code></p>
+<h5 id="日期匹配与分组替换"><a href="#日期匹配与分组替换" class="headerlink" title="日期匹配与分组替换"></a>日期匹配与分组替换</h5><p><code>/^\d{4}[/-]\d{2}[/-]\d{2}$/</code></p>
 <p><img src="http://ww3.sinaimg.cn/large/006tNc79gw1f9fnup4jbjj30dg02haa8.jpg" alt=""></p>
 <p>这个正则比较复杂，画符念咒的地方太多了，一一分析：</p>
 <ol>
@@ -66,11 +150,11 @@
 <p>轻松的可以拿到 group#1 #2 #3 的内容，对应 <code>$1</code> <code>$2</code> <code>$3</code></p>
 <p><img src="http://ww4.sinaimg.cn/large/006tNc79gw1f9fok05dhbj30as0550t8.jpg" alt=""></p>
 <p>到现在已经能结合图形化工具看懂正则表达式表达式了，如果想自己写，还要在正则语法上下点功夫</p>
-<h3 id="4-_Js_u4E2DRegexp_u5BF9_u8C61"><a href="#4-_Js_u4E2DRegexp_u5BF9_u8C61" class="headerlink" title="4. Js中Regexp对象"></a>4. Js中Regexp对象</h3><p>Javascript 通过内置对象RegExp支持正则表达式，有两种方法实例化RegExp对象</p>
-<h5 id="u5B57_u9762_u91CF_u65B9_u6CD5"><a href="#u5B57_u9762_u91CF_u65B9_u6CD5" class="headerlink" title="字面量方法"></a>字面量方法</h5><p><code>const reg =/\bis\b/g</code></p>
-<h5 id="u6784_u9020_u51FD_u6570"><a href="#u6784_u9020_u51FD_u6570" class="headerlink" title="构造函数"></a>构造函数</h5><p><code>const reg = new RegExp(&#39;\\bis\\b&#39;, &#39;g&#39;)</code></p>
+<h3 id="4-Js中Regexp对象"><a href="#4-Js中Regexp对象" class="headerlink" title="4. Js中Regexp对象"></a>4. Js中Regexp对象</h3><p>Javascript 通过内置对象RegExp支持正则表达式，有两种方法实例化RegExp对象</p>
+<h5 id="字面量方法"><a href="#字面量方法" class="headerlink" title="字面量方法"></a>字面量方法</h5><p><code>const reg =/\bis\b/g</code></p>
+<h5 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h5><p><code>const reg = new RegExp(&#39;\\bis\\b&#39;, &#39;g&#39;)</code></p>
 <p><em>注意：第一个参数为正则表达式字符串（注意转译），第二个参数为修饰符，修饰符g代表全局搜索，后面会有详细介绍。</em></p>
-<h3 id="5-__u6B63_u5219_u8868_u8FBE_u5F0F_u8BED_u6CD5"><a href="#5-__u6B63_u5219_u8868_u8FBE_u5F0F_u8BED_u6CD5" class="headerlink" title="5. 正则表达式语法"></a>5. 正则表达式语法</h3><h5 id="1__u4FEE_u9970_u7B26__uFF08_u4E09_u4E2A_g_i_m_uFF09"><a href="#1__u4FEE_u9970_u7B26__uFF08_u4E09_u4E2A_g_i_m_uFF09" class="headerlink" title="1 修饰符 （三个 g i m）"></a>1 修饰符 （三个 g i m）</h5><p>修饰符与其他语法特殊，字面量方法声名的时候放到<code>//</code>后，构造函数声明的时候，作为第二个参数传入。整个正则表达式可以理解为正则表达式规则字符串+修饰符</p>
+<h3 id="5-正则表达式语法"><a href="#5-正则表达式语法" class="headerlink" title="5. 正则表达式语法"></a>5. 正则表达式语法</h3><h5 id="1-修饰符-（三个-g-i-m）"><a href="#1-修饰符-（三个-g-i-m）" class="headerlink" title="1 修饰符 （三个 g i m）"></a>1 修饰符 （三个 g i m）</h5><p>修饰符与其他语法特殊，字面量方法声名的时候放到<code>//</code>后，构造函数声明的时候，作为第二个参数传入。整个正则表达式可以理解为正则表达式规则字符串+修饰符</p>
 <ul>
 <li>g：global 执行一个全局匹配</li>
 <li>i：ignore case执行一个不区分大小写的匹配</li>
@@ -78,21 +162,21 @@
 </ul>
 <p>修饰符可以一起用 <code>const reg =/\bis\b/gim</code></p>
 <p>来说说他们有什么作用</p>
-<h6 id="u6709g_u548C_u6CA1_u6709g_u7684_u533A_u522B"><a href="#u6709g_u548C_u6CA1_u6709g_u7684_u533A_u522B" class="headerlink" title="有g和没有g的区别"></a>有g和没有g的区别</h6><p><img src="http://ww1.sinaimg.cn/large/006tNc79gw1f9fp5k6qqsj30ez05kmxu.jpg" alt=""></p>
+<h6 id="有g和没有g的区别"><a href="#有g和没有g的区别" class="headerlink" title="有g和没有g的区别"></a>有g和没有g的区别</h6><p><img src="http://ww1.sinaimg.cn/large/006tNc79gw1f9fp5k6qqsj30ez05kmxu.jpg" alt=""></p>
 <p>没有g只替换了第一个，有g 所有的都换了</p>
 <p><img src="http://ww3.sinaimg.cn/large/006tNc79gw1f9fp7cneolj307h01jt8p.jpg" alt=""></p>
-<h6 id="u6709i_u548C_u6CA1_u6709i_u7684_u533A_u522B"><a href="#u6709i_u548C_u6CA1_u6709i_u7684_u533A_u522B" class="headerlink" title="有i和没有i的区别"></a>有i和没有i的区别</h6><p><img src="http://ww1.sinaimg.cn/large/006tNc79gw1f9fpapzyxfj30a505j74p.jpg" alt=""></p>
+<h6 id="有i和没有i的区别"><a href="#有i和没有i的区别" class="headerlink" title="有i和没有i的区别"></a>有i和没有i的区别</h6><p><img src="http://ww1.sinaimg.cn/large/006tNc79gw1f9fpapzyxfj30a505j74p.jpg" alt=""></p>
 <p>有i忽略大小写，没有i严格区分大小写</p>
 <p><img src="http://ww4.sinaimg.cn/large/006tNc79gw1f9fpbyofj7j307l01nt8q.jpg" alt=""></p>
-<h5 id="2__u5143_u5B57_u7B26"><a href="#2__u5143_u5B57_u7B26" class="headerlink" title="2 元字符"></a>2 元字符</h5><p>正则表达式由两种基本字符组成：</p>
+<h5 id="2-元字符"><a href="#2-元字符" class="headerlink" title="2 元字符"></a>2 元字符</h5><p>正则表达式由两种基本字符组成：</p>
 <ul>
 <li>原义字符</li>
 <li>非打印字符</li>
 <li>元字符 (* + ? $ ^ . | \ ( ) { } [ ])</li>
 </ul>
-<h5 id="3-__u539F_u4E49_u5B57_u7B26"><a href="#3-__u539F_u4E49_u5B57_u7B26" class="headerlink" title="3. 原义字符"></a>3. 原义字符</h5><p>这个没什么好解释的，我们一直在举例的 /is/ 匹配字符串’is’</p>
+<h5 id="3-原义字符"><a href="#3-原义字符" class="headerlink" title="3. 原义字符"></a>3. 原义字符</h5><p>这个没什么好解释的，我们一直在举例的 /is/ 匹配字符串’is’</p>
 <p><code>\</code>将下一个字符标记为一个特殊字符、或一个原义字符、或一个向后引用、或一个八进制转义符。例如，<code>n</code>”匹配字符“<code>n</code>”。“<code>\n</code>”匹配一个换行符。序列“<code>\\</code>”匹配“<code>\</code>”而“<code>\(</code>”则匹配“<code>(</code>”。</p>
-<h5 id="4-__u975E_u6253_u5370_u5B57_u7B26"><a href="#4-__u975E_u6253_u5370_u5B57_u7B26" class="headerlink" title="4. 非打印字符"></a>4. 非打印字符</h5><table>
+<h5 id="4-非打印字符"><a href="#4-非打印字符" class="headerlink" title="4. 非打印字符"></a>4. 非打印字符</h5><table>
 <thead>
 <tr>
 <th>字符</th>
@@ -137,14 +221,14 @@
 <p>非打印字符，以<code>\n</code>为例</p>
 <p><img src="http://ww1.sinaimg.cn/large/006tNc79gw1f9fqja7y50j30am05saag.jpg" alt=""></p>
 <p>其他的在前端引用比较少，应该在后端处理文本文件的时候会用到</p>
-<h5 id="5-__u5B57_u7B26_u7C7B__5B_5D"><a href="#5-__u5B57_u7B26_u7C7B__5B_5D" class="headerlink" title="5. 字符类 []"></a>5. 字符类 []</h5><p>在前面的手机号正则例子🌰中，我们已经使用过[]  <code>/^1[34578][0-9]{9}$/</code> :  <code>[34578]</code>表示34578任意一个数字即可。在日期匹配与分组替换例子🌰中 <code>/^\d{4}[/-]\d{2}[/-]\d{2}$/</code> 表示符合 <code>／</code>  <code>-</code>  都可以</p>
+<h5 id="5-字符类"><a href="#5-字符类" class="headerlink" title="5. 字符类 []"></a>5. 字符类 []</h5><p>在前面的手机号正则例子🌰中，我们已经使用过[]  <code>/^1[34578][0-9]{9}$/</code> :  <code>[34578]</code>表示34578任意一个数字即可。在日期匹配与分组替换例子🌰中 <code>/^\d{4}[/-]\d{2}[/-]\d{2}$/</code> 表示符合 <code>／</code>  <code>-</code>  都可以</p>
 <p><img src="http://ww2.sinaimg.cn/large/006tNc79gw1f9fr7ak7e1j309002r74d.jpg" alt=""></p>
-<h5 id="6-__u5B57_u7B26_u7C7B_u53D6_u53CD__5B_5E_5D"><a href="#6-__u5B57_u7B26_u7C7B_u53D6_u53CD__5B_5E_5D" class="headerlink" title="6. 字符类取反 [^]"></a>6. 字符类取反 [^]</h5><p>表示不属于此类</p>
+<h5 id="6-字符类取反"><a href="#6-字符类取反" class="headerlink" title="6. 字符类取反 [^]"></a>6. 字符类取反 [^]</h5><p>表示不属于此类</p>
 <p><img src="http://ww3.sinaimg.cn/large/006tNc79jw1f9fra79t56j309202qaa6.jpg" alt=""></p>
 <p>空格也不属于，好多狗🐶</p>
-<h5 id="7-__u8303_u56F4_u7C7B_5B-_5D"><a href="#7-__u8303_u56F4_u7C7B_5B-_5D" class="headerlink" title="7. 范围类[-]"></a>7. 范围类[-]</h5><p>正则表达式支持一定范围规则比如 <code>[a-z]</code> <code>[A-Z]</code>  <code>[0-9]</code>  可以连写[a-z0-9] 如果你只是想匹配<code>-</code>在 范围类最后加<code>-</code>即可。请看实例。</p>
+<h5 id="7-范围类"><a href="#7-范围类" class="headerlink" title="7. 范围类[-]"></a>7. 范围类[-]</h5><p>正则表达式支持一定范围规则比如 <code>[a-z]</code> <code>[A-Z]</code>  <code>[0-9]</code>  可以连写[a-z0-9] 如果你只是想匹配<code>-</code>在 范围类最后加<code>-</code>即可。请看实例。</p>
 <p><img src="http://ww1.sinaimg.cn/large/006tNc79jw1f9frka0ib8j309805hjrs.jpg" alt=""></p>
-<h5 id="8-__u9884_u5B9A_u4E49_u7C7B"><a href="#8-__u9884_u5B9A_u4E49_u7C7B" class="headerlink" title="8. 预定义类"></a>8. 预定义类</h5><p>常用为了方便书写</p>
+<h5 id="8-预定义类"><a href="#8-预定义类" class="headerlink" title="8. 预定义类"></a>8. 预定义类</h5><p>常用为了方便书写</p>
 <table>
 <thead>
 <tr>
@@ -193,7 +277,7 @@
 </table>
 <p>有了这些预定义类，写一些正则就很方便了，比如我们希望匹配一个 ab+数字+任意字符 的字符串，就可以这样写了 <code>/ab\d./</code></p>
 <p><img src="http://ww2.sinaimg.cn/large/006tNc79gw1f9fs73ic6pj305s00ydfr.jpg" alt=""></p>
-<h5 id="9-__u8FB9_u754C"><a href="#9-__u8FB9_u754C" class="headerlink" title="9. 边界"></a>9. 边界</h5><table>
+<h5 id="9-边界"><a href="#9-边界" class="headerlink" title="9. 边界"></a>9. 边界</h5><table>
 <thead>
 <tr>
 <th>字符</th>
@@ -221,7 +305,7 @@
 </table>
 <p>边界顾名思义即定义匹配的边界条件，上面基本都在前面的例子碰到了，这里演示下<code>\b</code>与<code>\B</code> 的区别</p>
 <p><img src="http://ww2.sinaimg.cn/large/006tNc79jw1f9ft3ihicwj308l05fgly.jpg" alt=""></p>
-<h5 id="10-__u91CF_u8BCD"><a href="#10-__u91CF_u8BCD" class="headerlink" title="10. 量词"></a>10. 量词</h5><table>
+<h5 id="10-量词"><a href="#10-量词" class="headerlink" title="10. 量词"></a>10. 量词</h5><table>
 <thead>
 <tr>
 <th>字符</th>
@@ -262,7 +346,7 @@
 <p>如果没有量词，要匹配4位数字这样写就可以<code>/\d\d\d\d/</code>, 如果匹配50位100位呢？那不是要疯掉了？<br>有了量词，就可以这样写<code>/\d{100}/</code>, 量词的使用我们在手机号中使用过，表现在可视化中就是循环多少次。</p>
 <p>凑一个上面都包含的实例<code>/\d?@\d*@\d+@\d{10}@\d{10,20}@\d{10,}@\d{0,10}/</code></p>
 <p><img src="http://ww2.sinaimg.cn/large/006tNc79gw1f9ftmqn7b6j30ls0210t3.jpg" alt=""></p>
-<h5 id="11-_u8D2A_u5A6A_u4E0E_u61D2_u60F0_uFF08_u975E_u8D2A_u5A6A_uFF09"><a href="#11-_u8D2A_u5A6A_u4E0E_u61D2_u60F0_uFF08_u975E_u8D2A_u5A6A_uFF09" class="headerlink" title="11.贪婪与懒惰（非贪婪）"></a>11.贪婪与懒惰（非贪婪）</h5><p>正则表达式默认会匹配贪婪模式，什么是贪婪模式呢？如其名尽可能多的匹配。我们看个例子🌰。</p>
+<h5 id="11-贪婪与懒惰（非贪婪）"><a href="#11-贪婪与懒惰（非贪婪）" class="headerlink" title="11.贪婪与懒惰（非贪婪）"></a>11.贪婪与懒惰（非贪婪）</h5><p>正则表达式默认会匹配贪婪模式，什么是贪婪模式呢？如其名尽可能多的匹配。我们看个例子🌰。</p>
 <p><code>/\d{3,6}/</code></p>
 <p><img src="http://kouyuntuchuang.oss-cn-shanghai.aliyuncs.com/2016-11-17-160139.jpg" alt=""></p>
 <p><img src="http://kouyuntuchuang.oss-cn-shanghai.aliyuncs.com/2016-11-17-160337.jpg" alt=""></p>
@@ -271,7 +355,7 @@
 <p><code>/\d{3,6}?/</code></p>
 <p><img src="http://kouyuntuchuang.oss-cn-shanghai.aliyuncs.com/2016-11-17-161114.jpg" alt=""></p>
 <p>如果想知道，正则表达式是如何匹配量词的，请看 <a href="https://segmentfault.com/a/1190000000426455" target="_blank" rel="external">进阶正则表达式</a> 文中有介绍，正则是如何回溯的。</p>
-<h5 id="12-_u5206_u7EC4_u4E0E_u53CD_u5411_u5F15_u7528"><a href="#12-_u5206_u7EC4_u4E0E_u53CD_u5411_u5F15_u7528" class="headerlink" title="12.分组与反向引用"></a>12.分组与反向引用</h5><p>分组，又称为子表达式。把正则表达式拆分成小表达式。概念枯燥，说个例子为嘛用分组：</p>
+<h5 id="12-分组与反向引用"><a href="#12-分组与反向引用" class="headerlink" title="12.分组与反向引用"></a>12.分组与反向引用</h5><p>分组，又称为子表达式。把正则表达式拆分成小表达式。概念枯燥，说个例子为嘛用分组：</p>
 <p><strong>不分组 <code>/abc{2}/</code></strong> </p>
 <p><img src="http://kouyuntuchuang.oss-cn-shanghai.aliyuncs.com/2016-11-17-162437.jpg" alt=""></p>
 <p>量词仅作用到最后的<code>c</code></p>
@@ -289,7 +373,7 @@
 <p>如果在反向引用中不想捕获年该如何操作? 加上 <code>?:</code>即可</p>
 <p><code>/^(?:\d{4})[/-](\d{2})[/-](\d{2})$/</code></p>
 <p><img src="http://ww2.sinaimg.cn/large/006y8mN6jw1f9vn6qq47jj30eq0320t3.jpg" alt=""></p>
-<h5 id="12-_u524D_u77BB"><a href="#12-_u524D_u77BB" class="headerlink" title="12.前瞻"></a>12.前瞻</h5><p>⚠️ 这部分为进阶部分—选看</p>
+<h5 id="12-前瞻"><a href="#12-前瞻" class="headerlink" title="12.前瞻"></a>12.前瞻</h5><p>⚠️ 这部分为进阶部分—选看</p>
 <p>正则表达式中有前瞻（Lookahead）和后顾（Lookbehind）的概念，这两个术语非常形象的描述了正则引擎的匹配行为。需要注意一点，正则表达式中的前和后和我们一般理解的前后有点不同。一段文本，我们一般习惯把文本开头的方向称作“前面”，文本末尾方向称为“后面”。但是对于正则表达式引擎来说，因为它是从文本头部向尾部开始解析的（可以通过正则选项控制解析方向），因此对于文本尾部方向，称为“前”，因为这个时候，正则引擎还没走到那块，而对文本头部方向，则称为“后”，因为正则引擎已经走过了那一块地方。</p>
 <p>⚠️注意：后顾性能损耗比较大，js只支持前瞻（知乎上看到的，具体原因不详）</p>
 <p>上面的比较概念话，尝试用大白话讲讲，就说皇上选妃吧，先行条件得是美女吧，长得“如花”那样皇上可不要，漂亮这关过了，皇上想要这个美女也不行，皇室有规矩，必须是贵族血统。</p>
@@ -310,68 +394,83 @@
 <p>今天学习了正则，可以一步到位 <code>&#39;123456789&#39;.replace(/(\d)(?=(?:\d{3})+$)/g, &#39;$1,&#39;)</code></p>
 <p>到此为止正则的基本使用已经结束，后面一篇会分享一些正则的 「奇技淫巧」</p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p><img src="http://ww3.sinaimg.cn/large/006y8mN6jw1f9voxp4qb9j312w0kkthh.jpg" alt=""></p>
-<p>正则表达式对于我来说一直像黑暗魔法一样的存在。手机正则去网上搜，邮箱正则去网上搜，复杂点的看]]>
+    
+      &lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/006y8mN6jw1f9voxp4qb9j312w0kkthh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;正则表达式对于我来说一直像黑暗魔法一样的存在。手机正则去网上搜，邮箱正则去网上搜，复杂点的看
+    
     </summary>
+    
     
   </entry>
   
   <entry>
-    <title><![CDATA[《黑客与画家》读书笔记]]></title>
+    <title>《黑客与画家》读书笔记</title>
     <link href="http://yoursite.com/2016/10/30/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/"/>
     <id>http://yoursite.com/2016/10/30/黑客与画家/</id>
     <published>2016-10-30T07:03:22.000Z</published>
     <updated>2016-10-30T07:04:27.000Z</updated>
+    
     <content type="html"><![CDATA[<p><img src="http://ww3.sinaimg.cn/large/72f96cbajw1f9a7xq83mcj20dw0liq5s.jpg" alt=""></p>
 <p>豆瓣：<a href="https://book.douban.com/subject/6021440/" target="_blank" rel="external">https://book.douban.com/subject/6021440/</a></p>
-<h3 id="1__u65E0_u610F_u4E49_u7684_u8BED_u8A00_u53E3_u6C34_u6218"><a href="#1__u65E0_u610F_u4E49_u7684_u8BED_u8A00_u53E3_u6C34_u6218" class="headerlink" title="1 无意义的语言口水战"></a>1 无意义的语言口水战</h3><p>三年前开始读的一本书，今天下午因为有朋友因为长途飞机和我借kindle的时候，才一口气读完。囫囵吞枣之后，有一些自己的想法记录下来。</p>
+<h3 id="1-无意义的语言口水战"><a href="#1-无意义的语言口水战" class="headerlink" title="1 无意义的语言口水战"></a>1 无意义的语言口水战</h3><p>三年前开始读的一本书，今天下午因为有朋友因为长途飞机和我借kindle的时候，才一口气读完。囫囵吞枣之后，有一些自己的想法记录下来。</p>
 <p>读过这本书后，相信有很多人会有学lisp的冲动，但作者写这本书的时候，已经今非昔比相信他今天也许会有不一样的结论。在作者的介绍中，能在lisp里面看到很多其他语言的影子。</p>
 <p>记得桑大曾经说过，Uber 之所以放弃node 改用 go 是因为node 不适合做计算密集型的业务，相比之下go更擅长。但是朋友圈一疯传会给媒体和没有深入了解的人，放出一个错误的信息。node是不是不行了，是不是应该去学go。</p>
 <p>每个语言都是针对特定的使用场景，总去拿自己的优势面和其他的劣势之处比较实在没什么意思。</p>
 <p>我会学习lisp么？答案是肯定的——会。为什么呢？打个比方，我喜欢看《冰火》《斯巴达克斯》这样的美剧，但是不影响我去看《青云志》这样电视剧。闲下来，一场说走就走的旅行，拿起一本没有看过豆瓣书评的书，不也是一样有趣的事情。作为一个程序员，了解下古老的语言，或许就能帮自己更了解自己所使用的语言。</p>
 <p>但是～ 我不会，用到我的生产环境中…..😂</p>
-<h3 id="2__u610F_u8BC6_u5230_u82F1_u8BED_u91CD_u8981_u6027"><a href="#2__u610F_u8BC6_u5230_u82F1_u8BED_u91CD_u8981_u6027" class="headerlink" title="2 意识到英语重要性"></a>2 意识到英语重要性</h3><p>虽然和这本书内容，没什么关系，但是我试图了解lisp的时候，发现国内的资料少之又少。如果自己能有不错的英语阅读能力，就不会限制我了解这个世界的途径。</p>
+<h3 id="2-意识到英语重要性"><a href="#2-意识到英语重要性" class="headerlink" title="2 意识到英语重要性"></a>2 意识到英语重要性</h3><p>虽然和这本书内容，没什么关系，但是我试图了解lisp的时候，发现国内的资料少之又少。如果自己能有不错的英语阅读能力，就不会限制我了解这个世界的途径。</p>
 <p>你们学习的时候，我出去浪了，出来混的总要还的。这些年吃到了，英语不好的亏。英语不好，你就缺失了与这个世界对话的一扇窗；英语不好，就会让你对这个世界的好奇心大打折扣。英语真的是你的一块儿心病。</p>
 <p>在日常的开发中也经常遇到英语的局限，现在开发，会依赖各种npm，因为依赖有的包产生bug的时候，而这个包很新，就很难去和作者沟通，这个时候google，虽然帮了自己找到真相，但是看不懂是硬伤。</p>
 <p>是时候，停下来好好提高自己的英文水平。如果在校大学生看到这篇文章，希望你能花点时间在工作之前把英语学好。</p>
 <p>就酱～</p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p><img src="http://ww3.sinaimg.cn/large/72f96cbajw1f9a7xq83mcj20dw0liq5s.jpg" alt=""></p>
-<p>豆瓣：<a href="https://book.douban.com/subject/60]]>
+    
+      &lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/72f96cbajw1f9a7xq83mcj20dw0liq5s.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;豆瓣：&lt;a href=&quot;https://book.douban.com/subject/60
+    
     </summary>
+    
     
       <category term="阅读" scheme="http://yoursite.com/tags/%E9%98%85%E8%AF%BB/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[启程]]></title>
+    <title>启程</title>
     <link href="http://yoursite.com/2016/07/12/%E5%90%AF%E7%A8%8B/"/>
     <id>http://yoursite.com/2016/07/12/启程/</id>
     <published>2016-07-12T05:46:02.000Z</published>
     <updated>2016-07-12T05:47:33.000Z</updated>
+    
     <content type="html"><![CDATA[<blockquote>
 <p>曾经的计划都没有严格执行，继续加油。在这里记录点点滴滴吧</p>
 </blockquote>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<blockquote>
-<p>曾经的计划都没有严格执行，继续加油。在这里记录点点滴滴吧</p>
-</blockquote>
-]]>
+    
+      &lt;blockquote&gt;
+&lt;p&gt;曾经的计划都没有严格执行，继续加油。在这里记录点点滴滴吧&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    
     </summary>
+    
     
   </entry>
   
   <entry>
-    <title><![CDATA[2016年书单]]></title>
+    <title>2016年书单</title>
     <link href="http://yoursite.com/2016/01/03/2016%E5%B9%B4%E4%B9%A6%E5%8D%95/"/>
     <id>http://yoursite.com/2016/01/03/2016年书单/</id>
     <published>2016-01-03T04:26:51.000Z</published>
     <updated>2016-01-03T04:31:52.000Z</updated>
-    <content type="html"><![CDATA[<h3 id="2016_u5E74_u4E66_u5355_uFF086/24_uFF09"><a href="#2016_u5E74_u4E66_u5355_uFF086/24_uFF09" class="headerlink" title="2016年书单（6/24）"></a>2016年书单（6/24）</h3><p>2016年计划读24本书。平均每15天阅读一本，读后发读书笔记</p>
+    
+    <content type="html"><![CDATA[<h3 id="2016年书单（6-24）"><a href="#2016年书单（6-24）" class="headerlink" title="2016年书单（6/24）"></a>2016年书单（6/24）</h3><p>2016年计划读24本书。平均每15天阅读一本，读后发读书笔记</p>
 <ol>
 <li>《人类简史》</li>
 <li>《Just for fun》</li>
@@ -381,9 +480,13 @@
 <li>《测试驱动的javascript》</li>
 </ol>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<h3 id="2016_u5E74_u4E66_u5355_uFF086/24_uFF09"><a href="#2016_u5E74_u4E66_u5355_uFF086/24_uFF09" class="headerlink" title="2016年书单（6/24）"><]]>
+    
+      &lt;h3 id=&quot;2016年书单（6-24）&quot;&gt;&lt;a href=&quot;#2016年书单（6-24）&quot; class=&quot;headerlink&quot; title=&quot;2016年书单（6/24）&quot;&gt;&lt;/a&gt;2016年书单（6/24）&lt;/h3&gt;&lt;p&gt;2016年计划读24本书。平均每15天阅读一本，读后
+    
     </summary>
+    
     
       <category term="阅读" scheme="http://yoursite.com/tags/%E9%98%85%E8%AF%BB/"/>
     
