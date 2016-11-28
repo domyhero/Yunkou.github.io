@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 命令行备忘录 · Hexo</title><meta name="description" content="命令行备忘录 - Yunkou"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="Hexo"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">博客</a></li><li class="nav-list-item"><a href="http://weibo.com/koopkng" target="_blank" class="nav-list-link">微博</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li><li class="nav-list-item"><a href="https://github.com/Yunkou" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">命令行备忘录</h1><div class="post-info">Nov 28, 2016</div><div class="post-content"><h3 id="1-一行命令执行多个命令"><a href="#1-一行命令执行多个命令" class="headerlink" title="1. 一行命令执行多个命令"></a>1. 一行命令执行多个命令</h3><p>三个连接符<code>;</code>  <code>&amp;&amp;</code>  <code>||</code></p>
+<p><strong>区别：</strong></p>
+<ol>
+<li><code>;</code>  如果被分号(;)所分隔的命令会连续的执行下去，就算是错误的命令也会继续执行后面的命令。</li>
+<li><code>&amp;&amp;</code> 如果命令被 &amp;&amp; 所分隔，那么命令也会一直执行下去，但是中间有错误的命令存在就不会执行后面的命令，没错就直行至完为止。</li>
+<li><code>||</code>如果每个命令被双竖线 || 所分隔，那么一遇到可以执行成功的命令就会停止执行后面的命令，而不管后面的命令是否正确与否。如果执行到错误的命令就是继续执行后一个命令，一直执行到遇到正确的命令为止。</li>
+</ol>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir <span class="built_in">test</span> &amp;&amp; touch <span class="built_in">test</span>/main.test.js</div></pre></td></tr></table></figure>
+<h3 id="2-编辑命令"><a href="#2-编辑命令" class="headerlink" title="2. 编辑命令"></a>2. 编辑命令</h3><ul>
+<li>Control + a ：移到命令行首</li>
+<li>Control + e ：移到命令行尾</li>
+<li>Control + f ：按字符前移（右向）</li>
+<li>Control + b ：按字符后移（左向）</li>
+<li>Option  + f ：按单词前移（右向）</li>
+<li>Option  + b ：按单词后移（左向）</li>
+<li>Control + xx：在命令行首和光标之间移动</li>
+<li>Control + u ：从光标处删除至命令行首</li>
+<li>Control + k ：从光标处删除至命令行尾</li>
+<li>Control + w ：从光标处删除至字首</li>
+<li>Option  + d ：从光标处删除至字尾</li>
+<li>Control + d ：删除光标处的字符</li>
+<li>Control + h ：删除光标前的字符</li>
+<li>Control + y ：粘贴至光标后</li>
+<li>Option  + c ：从光标处更改为首字母大写的单词</li>
+<li>Option  + u ：从光标处更改为全部大写的单词</li>
+<li>Option  + l ：从光标处更改为全部小写的单词</li>
+<li>Control + t ：交换光标处和之前的字符</li>
+<li>Option  + t ：交换光标处和之前的单词</li>
+</ul>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/11/26/工程师如何规划自己的职业生涯/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'yunkou-blog';
+var disqus_identifier = '2016/11/28/命令行备忘录/';
+var disqus_title = '命令行备忘录';
+var disqus_url = 'http://yoursite.com/2016/11/28/命令行备忘录/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//yunkou-blog.disqus.com/count.js" async></script><div class="copyright"><p>© undefined - 2016 <a href="http://yoursite.com">Yunkou</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-71814553-1",'auto');ga('send','pageview');</script></body></html>
