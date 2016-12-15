@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-15T17:45:29.000Z</updated>
+  <updated>2016-12-15T19:16:37.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>algorithm in javascript 1</title>
-    <link href="http://yoursite.com/2016/12/16/algorithm-in-javascript-1/"/>
-    <id>http://yoursite.com/2016/12/16/algorithm-in-javascript-1/</id>
+    <title>Algorithm in Javascript Bubble Sort</title>
+    <link href="http://yoursite.com/2016/12/16/algorithm-in-javascript-bubble-sort/"/>
+    <id>http://yoursite.com/2016/12/16/algorithm-in-javascript-bubble-sort/</id>
+    <published>2016-12-15T19:15:46.000Z</published>
+    <updated>2016-12-15T19:16:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ww3.sinaimg.cn/large/006tNbRwjw1fas0m8g5lvj312w0pxafw.jpg" alt=""></p>
+<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><p><strong>理解：</strong><br>冒泡排序算法的流程如下：</p>
+<ol>
+<li>比较相邻的元素。 如果第一个比第二个大，就交换他们两个。</li>
+<li>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。 在这一点，最后的元素应该会是最大的数。</li>
+<li>针对所有的元素重复以上的步骤，除了最后一个。</li>
+<li>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</li>
+</ol>
+<p><strong>核心思想：</strong><br>比较两个相邻位置如果位置错误就交换<br><strong>图解：</strong><br><img src="http://ww1.sinaimg.cn/large/006tNbRwgw1fas2iv4y2qj30rg0dfwgq.jpg" alt=""><br><img src="http://ww2.sinaimg.cn/large/006tNbRwgw1fas0uvzokxg307s06lgo0.gif" alt=""></p>
+<p><a href="http://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html" target="_blank" rel="external">Comparison Sorting Visualization</a>点击链接后选择Bubble Sort</p>
+<p><strong>代码实现：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">bubbleSort</span> (<span class="params">arr</span>) </span>&#123;</div><div class="line">  <span class="keyword">let</span> len = arr.length</div><div class="line">  <span class="comment">// 通过交换每次选出最大的放大哦最后，排到第二位时候一次交换完成，</span></div><div class="line">  <span class="comment">// 所以排多少次是固定的 len - 1</span></div><div class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt; len; i++) &#123;</div><div class="line">    <span class="comment">// 每次把最大的数推到最后，最后排序已经固定了，没有必要再排</span></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">1</span>; j &lt;= len - i; j++) &#123;</div><div class="line">      <span class="keyword">if</span> (arr[j] &lt; arr[j - <span class="number">1</span>]) &#123;</div><div class="line">        [arr[j], arr[j - <span class="number">1</span>]] = [arr[j - <span class="number">1</span>], arr[j]]</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> arr</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(bubbleSort([<span class="number">1</span>,<span class="number">3</span>,<span class="number">9</span>,<span class="number">8</span>,<span class="number">7</span>,<span class="number">2</span>]))</div></pre></td></tr></table></figure></p>
+<h2 id="番外篇"><a href="#番外篇" class="headerlink" title="番外篇"></a>番外篇</h2><p>学习算法遇遇到的好的资料<br>一个不错的博客 <a href="http://bubkoo.com/" target="_blank" rel="external">http://bubkoo.com/</a><br>算法可视化的网站<a href="http://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank" rel="external">Data Structure Visualization</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/006tNbRwjw1fas0m8g5lvj312w0pxafw.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;冒泡排序&quot;&gt;&lt;a href=&quot;#冒泡排序&quot; class=&quot;headerlink&quot; 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Algorithm in Javascript Bucket Sort</title>
+    <link href="http://yoursite.com/2016/12/16/algorithm-in-javascript-bucket-sort/"/>
+    <id>http://yoursite.com/2016/12/16/algorithm-in-javascript-bucket-sort/</id>
     <published>2016-12-15T17:43:44.000Z</published>
-    <updated>2016-12-15T17:45:29.000Z</updated>
+    <updated>2016-12-15T19:13:49.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://ww2.sinaimg.cn/large/006tNbRwgw1fary7i72nij312w0pxn0c.jpg" alt=""></p>
 <p>我怎么又去研究算法了呢？自己不是根正苗红CS专业，基础差，亡羊补牢，填充数据结构方面的空白，学习过程遇到有趣的算法就记录下来。<br>常见算法，多为 c  c++ python 所描述，为方便，尝试转成日常所用javascript 才疏学浅，如有写的不当之处，不吝赐教。🙏🙏🙏🙏</p>
@@ -41,6 +72,9 @@
 <li>桶排序是稳定的</li>
 <li>桶排序是常见排序里最快的一种,比快排还要快…大多数情况下</li>
 <li>桶排序非常快,但是同时也非常耗空间,基本上是最耗空间的一种排序算法</li>
+</ol>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<li><a href="http://bubkoo.com/2014/01/15/sort-algorithm/bucket-sort/" target="_blank" rel="external">常见排序算法 - 桶排序 (Bucket Sort) </a></li>
 </ol>
 ]]></content>
     
