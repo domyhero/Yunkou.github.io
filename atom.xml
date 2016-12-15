@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-08T16:17:11.000Z</updated>
+  <updated>2016-12-15T17:45:29.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>algorithm in javascript 1</title>
+    <link href="http://yoursite.com/2016/12/16/algorithm-in-javascript-1/"/>
+    <id>http://yoursite.com/2016/12/16/algorithm-in-javascript-1/</id>
+    <published>2016-12-15T17:43:44.000Z</published>
+    <updated>2016-12-15T17:45:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ww2.sinaimg.cn/large/006tNbRwgw1fary7i72nij312w0pxn0c.jpg" alt=""></p>
+<p>我怎么又去研究算法了呢？自己不是根正苗红CS专业，基础差，亡羊补牢，填充数据结构方面的空白，学习过程遇到有趣的算法就记录下来。<br>常见算法，多为 c  c++ python 所描述，为方便，尝试转成日常所用javascript 才疏学浅，如有写的不当之处，不吝赐教。🙏🙏🙏🙏</p>
+<h2 id="桶排序"><a href="#桶排序" class="headerlink" title="桶排序"></a>桶排序</h2><p><strong>代码实现：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">bucketSort</span> (<span class="params">arr</span>) </span>&#123;</div><div class="line">  <span class="comment">// 假设我们排序的范围为0-10 那么我们准备11个桶来放这些数字</span></div><div class="line">  <span class="keyword">let</span> buckets = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">11</span>).fill(<span class="number">0</span>)</div><div class="line">  <span class="keyword">let</span> newArr = []</div><div class="line"></div><div class="line">  <span class="comment">// 装桶</span></div><div class="line">  arr.forEach(<span class="function"><span class="params">val</span> =&gt;</span> &#123; buckets[val]++ &#125;)</div><div class="line"></div><div class="line">  buckets.forEach(<span class="function">(<span class="params">val, index</span>) =&gt;</span> &#123;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt;= val; i++) &#123;</div><div class="line">      newArr.push(index)</div><div class="line">    &#125;</div><div class="line">  &#125;)</div><div class="line"></div><div class="line">  <span class="keyword">return</span> newArr</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(bucketSort([<span class="number">5</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">8</span>]))</div><div class="line"><span class="built_in">console</span>.log(bucketSort([<span class="number">1</span>, <span class="number">3</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">2</span>]))</div><div class="line"><span class="built_in">console</span>.log(bucketSort([<span class="number">3</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">7</span>, <span class="number">9</span>, <span class="number">2</span>, <span class="number">5</span>]))</div></pre></td></tr></table></figure></p>
+<p><strong>图解：</strong><br><img src="http://ww2.sinaimg.cn/large/006tNbRwjw1farztois5yj30iy0cowfe.jpg" alt=""></p>
+<p><img src="http://ww3.sinaimg.cn/large/006tNbRwjw1farzs9q4mvj30gm05174u.jpg" alt=""></p>
+<p><strong>理解：</strong></p>
+<blockquote>
+<p>桶排序 (Bucket sort)或所谓的箱排序的原理是将数组分到有限数量的桶子里，然后对每个桶子再分别排序（有可能再使用别的排序算法或是以递归方式继续使用桶排序进行排序），最后将各个桶中的数据有序的合并起来。</p>
+</blockquote>
+<ol>
+<li>根据数列最大值设置桶数量</li>
+<li>把数据放到对应的桶里</li>
+<li>循环输出不为空桶里面的数据，计数多少输出多少次</li>
+</ol>
+<p>桶排序动画演示： <a href="http://www.cs.usfca.edu/~galles/visualization/BucketSort.html" target="_blank" rel="external">Bucket Sort Visualization</a><br><strong>特点：</strong></p>
+<ol>
+<li>桶排序是稳定的</li>
+<li>桶排序是常见排序里最快的一种,比快排还要快…大多数情况下</li>
+<li>桶排序非常快,但是同时也非常耗空间,基本上是最耗空间的一种排序算法</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/006tNbRwgw1fary7i72nij312w0pxn0c.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;我怎么又去研究算法了呢？自己不是根正苗红CS专业，基础差，亡羊补牢，填充数据结构方面的空白，
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title> 利用sketch插件优化前端工作</title>
