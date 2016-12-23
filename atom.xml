@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-15T19:16:37.000Z</updated>
+  <updated>2016-12-23T15:10:29.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Algorithm in Javascript Quick Sort</title>
+    <link href="http://yoursite.com/2016/12/23/algorithm-in-javascript-quick-sort/"/>
+    <id>http://yoursite.com/2016/12/23/algorithm-in-javascript-quick-sort/</id>
+    <published>2016-12-23T15:08:34.000Z</published>
+    <updated>2016-12-23T15:10:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ww2.sinaimg.cn/large/006tNbRwjw1fas33vep7zj312w0pxjve.jpg" alt=""></p>
+<p>桶排序快但是内存消耗大<br>冒泡排序节省内存但是排序速度慢<br>今天主角是 快速排序，快速排序和前面两种算法比较既不浪费空间又可以快一点排序。快速排序也是使用最广泛的排序算法</p>
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><p><a href="http://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html" target="_blank" rel="external">Comparison Sorting Visualization</a> 点击链接 点Quick Sort 按钮<br>快排，理解起来比较“麻烦”点, 见图示<br><img src="http://ww1.sinaimg.cn/large/006y8lVagw1fb13gy71g6j30di0gt75h.jpg" alt=""></p>
+<ol>
+<li>随便找个数作为基数 图为7</li>
+<li>从两边开始找，左边负责找比基数大的数，找到停止，右边找到比基数小的数停止</li>
+<li>把两个找到的数交换位置，重复2 直到左右相遇</li>
+<li>这时候，基数归位，这时候数列分成两个数列，左边比基数小，右边比基数大。</li>
+<li>分别在两个数列重复1-4</li>
+</ol>
+<p>在排序算法中遇到了“二分”这个思想，二分会在以后的学习中遇到。</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">quicksort</span>(<span class="params">arr</span>) </span>&#123;</div><div class="line">	<span class="comment">//if array is empty</span></div><div class="line">	<span class="keyword">if</span> (arr.length === <span class="number">0</span>) &#123; <span class="keyword">return</span> [] &#125;</div><div class="line">	</div><div class="line">	<span class="keyword">var</span> left = [];</div><div class="line">	<span class="keyword">var</span> right = [];</div><div class="line">  <span class="keyword">var</span> pivot = arr[<span class="number">0</span>];</div><div class="line">  </div><div class="line">	<span class="comment">//go through each element in array</span></div><div class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; arr.length; i++) &#123;</div><div class="line">  	  <span class="keyword">if</span> (arr[i] &lt; pivot) &#123;</div><div class="line">      left.push(arr[i]);</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">      right.push(arr[i]);</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="keyword">return</span> quicksort(left).concat(pivot, quicksort(right));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="学习算法中遇到的好玩的东西"><a href="#学习算法中遇到的好玩的东西" class="headerlink" title="学习算法中遇到的好玩的东西"></a>学习算法中遇到的好玩的东西</h2><ol>
+<li>推荐一本书讲算法的生动有趣《 <a href="https://book.douban.com/subject/25894685/" target="_blank" rel="external">啊哈!算法</a> 》我开始学习算法就是在这本书开始的，这本书算法的描述是c语言 。如果对c语言有遗忘推荐作者的另一本书《 <a href="https://book.douban.com/subject/25716079/" target="_blank" rel="external">啊哈C！思考快你一步</a> 》</li>
+<li><a href="http://jsdo.it/norahiko/oxIy/fullscreen" target="_blank" rel="external">又一个排序算法可视化的网站</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html" target="_blank" rel="external">快速排序（Quicksort）的Javascript实现</a></li>
+<li><a href="https://antjanus.com/blog/web-development-tutorials/understanding-quicksort-js-native-implementation/" target="_blank" rel="external">Understanding Quicksort, and taking advantage of JS’s native implementation - AntJanus</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/006tNbRwjw1fas33vep7zj312w0pxjve.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;桶排序快但是内存消耗大&lt;br&gt;冒泡排序节省内存但是排序速度慢&lt;br&gt;今天主角是 快速排序，快
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Algorithm in Javascript Bubble Sort</title>

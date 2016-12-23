@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/12/23/algorithm-in-javascript-quick-sort/</loc>
+    
+    <lastmod>2016-12-23T15:10:29.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/12/16/algorithm-in-javascript-bubble-sort/</loc>
     
     <lastmod>2016-12-15T19:16:37.000Z</lastmod>
