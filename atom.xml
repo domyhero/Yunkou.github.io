@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-23T15:15:00.000Z</updated>
+  <updated>2017-01-27T15:14:25.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>im项目回顾</title>
+    <link href="http://yoursite.com/2017/01/27/im%E9%A1%B9%E7%9B%AE%E5%9B%9E%E9%A1%BE/"/>
+    <id>http://yoursite.com/2017/01/27/im项目回顾/</id>
+    <published>2017-01-27T14:23:11.000Z</published>
+    <updated>2017-01-27T15:14:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>年前有幸和其他几个优秀的同事一起开发完成im项目开发。im项目在公司所有产品线中是功能最少但是细节多开发难度大。一方面来自于产品形态属于富交互，第二点来自优秀作品的比较：比如钉钉，微信，QQ等等。往往一个看似平常的功能，实现起来要多端配合，难度的跨度比较大。</p>
+<p>先看效果： 线上地址 <a href="https://im.clouderwork.com" target="_blank" rel="external">https://im.clouderwork.com</a></p>
+<p>im项目虽然历经坎坷，单回头看也很精彩其中有很多可圈可点之处，不方便一一道来，随手拿出几个经典的场景浅析下使用的方案，希望有所交流和帮助</p>
+<h3 id="Contenteditable-Vs-Textarea"><a href="#Contenteditable-Vs-Textarea" class="headerlink" title="Contenteditable Vs Textarea"></a>Contenteditable Vs Textarea</h3><p><img src="https://ww4.sinaimg.cn/large/006y8lValy1fc5ka37xufj30rp0khwfi.jpg" alt=""></p>
+<p>发消息的输入框可以有两种方案：</p>
+<p><strong>方案1:</strong> 使用div contenteditable </p>
+<p><strong>方案2:</strong> 使用textarea</p>
+<p>分析下两种方案的利弊：<strong>方案1</strong>  可以插入任意标签，对于im 多个标签就可以干很多事，比如标记@的信息，展示表情。项目初期我们使用的此方案，美中不足不兼容其他端，也就是前端可以随意展示html 但是安卓端和ios端不能在消息体中带有html标签  <strong>方案2:</strong> 是纯 字符串解决方案，兼容其他端，变成了操作字符串。相应的表情不能展示成图片，只能<code>[开心]</code>这样展示。几经沟通最后确定还是采用了方案2</p>
+<p>下面分享下方案2的难点</p>
+<p>如果是方案1 我们可以@人的时候 加入一个<code>span</code> 标签 <code>&lt;span contenteditable=&quot;false&quot; data-id=&#39;xxxxx&#39;&gt;@路飞&lt;/span&gt;</code> 这样我们解析的时候非常好解析，还有个问题，单我们删除@的人的时候 是整个@路飞一起删除，而不是一个个字删除。</p>
+<p>在纯字符串中去解决这个问题就不好解决了。顺带还有一些其他问题比如：键盘左右键，经过 @路飞的时候要跳过去，不能停留在 @路飞 之间，不能破坏@的结构。 鼠标单击要让光标落在 @路飞 的前面或者后面。</p>
+<p>该功能参照钉钉客户端的实现。</p>
+<p>为了更好的交流，我把代码也开源出来，希望能有更好的解决方案。体验效果：<a href="http://kouyun.me/Vue-textarea/" target="_blank" rel="external">http://kouyun.me/Vue-textarea/</a></p>
+<p><a href="https://github.com/Yunkou/Vue-textarea/tree/gh-pages" target="_blank" rel="external">https://github.com/Yunkou/Vue-textarea/tree/gh-pages</a> 代码在此</p>
+<p><img src="https://ww1.sinaimg.cn/large/006y8lValy1fc5kuup220j30fv0fyt9f.jpg" alt=""></p>
+<p>说下大概的思路：</p>
+<p>整个操作都是在计算光标和字符串index 的关系。会维护一个数组存储@的信息，记录这个@开始的位置，结束的位置和一些特征信息比如id。</p>
+<p>核心代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> REX = <span class="regexp">/\s@\S+\s/g</span></div><div class="line"><span class="keyword">let</span> arr</div><div class="line"><span class="keyword">let</span> posArr = []</div><div class="line"><span class="keyword">while</span> ((arr = REX.exec(val)) !== <span class="literal">null</span>) &#123;</div><div class="line"><span class="keyword">let</span> pos = &#123;</div><div class="line">  <span class="attr">start</span>: arr.index,</div><div class="line">  <span class="attr">end</span>: REX.lastIndex</div><div class="line">&#125;</div><div class="line">posArr.push(pos)</div></pre></td></tr></table></figure>
+<p>利用正则对象exec 方法 不断迭代。找到开始点和结束点。</p>
+<p>单其他相关操作的时候，遍历光标是否在这个区间内，一旦进入这个区间立即给予相应的处理。</p>
+<p>第二个难点textarea 是没法拿到光标的坐标<br>这里比较绕，不是光标的位置 index，而是定位 fixed position 也就是相对页面位置。这个该如何计算，一直是个难点，这个问题用来解决，手动输入@的时候，正确的在光标定位处出现 @的人员列表。光标是无法计算的。后来想了一个代理布局的方式，即在 textarea 下方 用一个pre标签来模拟 textarea 标签布局。当textarea监听到输入@（修饰键50且shift修饰键值为true），在pre光标处（字符串index）插入 空span标签。然后用dom树找到插入的空span标签计算出位置，并映射到textarea正确的位置。</p>
+<p>核心代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (!e.shiftKey) &#123; <span class="keyword">return</span> &#125;</div><div class="line"><span class="keyword">let</span> index = <span class="built_in">document</span>.querySelector(<span class="string">'textarea'</span>).selectionStart</div><div class="line"><span class="keyword">let</span> tmpStr = <span class="keyword">this</span>.textValue</div><div class="line"><span class="keyword">let</span> pre = <span class="built_in">document</span>.querySelector(<span class="string">'.textarea'</span>)</div><div class="line">pre.innerHTML = tmpStr.substring(<span class="number">0</span>, index) + <span class="string">'&lt;span&gt;&lt;/span&gt;'</span> + tmpStr.substring(index, tmpStr.length)</div><div class="line"><span class="keyword">let</span> span = pre.querySelector(<span class="string">'span'</span>)</div><div class="line"><span class="keyword">let</span> left = span.offsetLeft - pre.offsetLeft</div><div class="line"><span class="keyword">let</span> bottom = <span class="number">150</span> - (span.offsetTop - pre.offsetTop)</div><div class="line"><span class="comment">// 小于0时根据滚动高度来计算位置</span></div><div class="line"><span class="keyword">if</span> (bottom &lt; <span class="number">0</span>) &#123;</div><div class="line">  <span class="keyword">let</span> scrollHeight = pre.scrollHeight</div><div class="line">  bottom = scrollHeight - <span class="number">10</span> - (span.offsetTop - pre.offsetTop)</div><div class="line">&#125;</div><div class="line"><span class="keyword">this</span>.atListPos = &#123;</div><div class="line">  <span class="attr">left</span>: left + <span class="number">10</span> + <span class="string">'px'</span>,</div><div class="line">  <span class="attr">bottom</span>: bottom + <span class="string">'px'</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>im可以说是技术的一个无底洞，处理的技术细节特别多，随着慢慢的打磨越来越喜欢上这个项目，大胆实践，谨慎求证。</p>
+<p>文写于2017除夕夜，祝自己和朋友亲人新年快乐。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;年前有幸和其他几个优秀的同事一起开发完成im项目开发。im项目在公司所有产品线中是功能最少但是细节多开发难度大。一方面来自于产品形态属于富交互，第二点来自优秀作品的比较：比如钉钉，微信，QQ等等。往往一个看似平常的功能，实现起来要多端配合，难度的跨度比较大。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Algorithm in Javascript Quick Sort</title>

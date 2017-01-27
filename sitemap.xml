@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/01/27/im%E9%A1%B9%E7%9B%AE%E5%9B%9E%E9%A1%BE/</loc>
+    
+    <lastmod>2017-01-27T15:14:25.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/12/23/algorithm-in-javascript-quick-sort/</loc>
     
     <lastmod>2016-12-23T15:15:00.000Z</lastmod>
