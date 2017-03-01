@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-28T09:19:10.000Z</updated>
+  <updated>2017-03-01T09:40:18.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,72 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Shell编程笔记01</title>
+    <link href="http://yoursite.com/2017/03/01/Shell%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B001/"/>
+    <id>http://yoursite.com/2017/03/01/Shell编程笔记01/</id>
+    <published>2017-03-01T09:39:25.000Z</published>
+    <updated>2017-03-01T09:40:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Shell概述</p>
+<blockquote>
+<p>Shell 是一个用C语言编写的程序，它是用户使用Linux的桥梁。Shell既是一种命令语言，又是一种程序设计语言。<br>Shell 是指一种应用程序，这个应用程序提供了一个界面，用户通过这个界面访问操作系统内核的服务。<br><img src="http://ww4.sinaimg.cn/large/006tNc79gy1fd6bbbjo0ej307w08imxk.jpg" alt=""></p>
+</blockquote>
+<ul>
+<li>Shell 的两种主要语法类型有Bourne和C，这两种语法彼此不兼容。Bourne家族主要包括 <code>sh</code> <code>ksh</code> <code>Bash</code> <code>psh</code> <code>zsh</code>;  C家族主要包括：<code>csh</code> <code>tcsh</code></li>
+</ul>
+<p>查看当前Shell类型<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="variable">$SHELL</span></div></pre></td></tr></table></figure></p>
+<p>/bin/zsh</p>
+<p>查看当前系统支持的shell<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat /etc/shells</div></pre></td></tr></table></figure></p>
+<h2 id="脚本的执行方法"><a href="#脚本的执行方法" class="headerlink" title="脚本的执行方法"></a>脚本的执行方法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line"><span class="comment">#The frist shell</span></div><div class="line"><span class="built_in">echo</span> <span class="_">-e</span> <span class="string">"\e[1;36m hello world \e[0m"</span></div></pre></td></tr></table></figure>
+<p>执行上面的脚本</p>
+<ul>
+<li>赋予执行权限，直接运行 <code>chmod 755 hello.sh</code>  <code>./hello.sh</code></li>
+<li>通过bash调用执行脚本 <code>bash hello.sh</code></li>
+</ul>
+<h2 id="Bash的基本功能"><a href="#Bash的基本功能" class="headerlink" title="Bash的基本功能"></a>Bash的基本功能</h2><h3 id="命令别名与快捷键"><a href="#命令别名与快捷键" class="headerlink" title="命令别名与快捷键"></a>命令别名与快捷键</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#查看系统中别名配置列表</span></div><div class="line"> <span class="built_in">alias</span></div><div class="line"><span class="comment">#设置别名</span></div><div class="line"> <span class="built_in">alias</span> rm=<span class="string">"rm -i"</span></div></pre></td></tr></table></figure>
+<p>注意：以上alias 是临时的一旦用户注销就回销毁<br>如果想始终生效需要修改 <code>.bashrc</code>文件<br> <code>.bashrc</code> 文件修改后需要重新登录生效<br> <code>source .bashrc</code>  可以直接生效</p>
+<h3 id="删除别名"><a href="#删除别名" class="headerlink" title="删除别名"></a>删除别名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">unalias</span></div></pre></td></tr></table></figure>
+<p>这个也是临时删除，永久删除修改 <code>.bashrc</code></p>
+<h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><ul>
+<li>ctrl + c  强制当前命令</li>
+<li>ctrl + l   清屏</li>
+<li>ctrl + a  光标移到到命令行首</li>
+<li>ctrl + e  光标移到到命令行尾</li>
+<li>ctrl + u  从光标所在位置删除到行首</li>
+<li>ctrl + z  把命令放入后台</li>
+<li>ctrl + r  在历史命令中搜索</li>
+</ul>
+<h3 id="历史命令"><a href="#历史命令" class="headerlink" title="历史命令"></a>历史命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">history</span> [选项]</div></pre></td></tr></table></figure>
+<p>选项：</p>
+<ul>
+<li>-c ： 清空历史命令</li>
+<li>-w ： 把缓存中的历史命令写入历史命令保存文件<code>~/.bash_history</code><br>注意： history 命令是历史命令和本次登录命令。.bash_history文件则为正常注销退出之后，存入的历史命令。<br>-w  是手动把临时历史写入 .bash_history<br>历史命令默认会保存1000条，可以在环境变量配置文件/etc/profile中进行修改 HISTSIZE=1000</li>
+</ul>
+<h3 id="历史命令的调用"><a href="#历史命令的调用" class="headerlink" title="历史命令的调用"></a>历史命令的调用</h3><ul>
+<li>使用上下箭头调用以前的历史命令</li>
+<li>使用<code>!n</code> 重复执行第n条历史命令</li>
+<li>使用<code>!!</code> 重复执行上一条命令</li>
+<li>使用<code>!字符串</code>  重复执行最后一条以该字符串开头的命令</li>
+</ul>
+<h3 id="输出重定向"><a href="#输出重定向" class="headerlink" title="输出重定向"></a>输出重定向</h3><p><img src="http://ww3.sinaimg.cn/large/006tNc79ly1fd7fpx9sx6j30xg0e7acw.jpg" alt=""></p>
+<h3 id="多命令顺序执行"><a href="#多命令顺序执行" class="headerlink" title="多命令顺序执行"></a>多命令顺序执行</h3><p><img src="http://ww2.sinaimg.cn/large/006tNc79ly1fd7fx4adx7j30ml089mye.jpg" alt=""></p>
+<h3 id="管道符"><a href="#管道符" class="headerlink" title="管道符"></a>管道符</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[命令1] | [命令2]</div><div class="line"> <span class="comment">#命令1的正确输出作为命令2的操作对象</span></div></pre></td></tr></table></figure>
+<h3 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h3><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1fd7gto0gjkj30wi0ckdik.jpg" alt=""></p>
+<h3 id="shell中特殊符号"><a href="#shell中特殊符号" class="headerlink" title="shell中特殊符号"></a>shell中特殊符号</h3><p><img src="http://ww2.sinaimg.cn/large/006tNc79gy1fd7h458m6rj30q409wacv.jpg" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Shell概述&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Shell 是一个用C语言编写的程序，它是用户使用Linux的桥梁。Shell既是一种命令语言，又是一种程序设计语言。&lt;br&gt;Shell 是指一种应用程序，这个应用程序提供了一个界面，用户通过这个界面访问操作系统内核的
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Linux学习笔记-基础与命令</title>
